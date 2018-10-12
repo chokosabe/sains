@@ -1,0 +1,3 @@
+ipdb
+ipython
+pytest==3.8.2

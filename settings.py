@@ -5,7 +5,7 @@ MAX_LINES = 2
 ALLOWED_DAYS = ['mon', 'tue', 'wed', 'thu', 'fri']
 
 INDEXED_DAYS = OrderedDict([
-    ('mon', 0)
+    ('mon', 0),
     ('tue', 1),
     ('wed', 2),
     ('thu', 3),

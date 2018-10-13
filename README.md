@@ -1,11 +1,12 @@
 ## Setup
-*Checkout the code and cd to the code directory
-*Install virtualenv
-*pip3 install virtualenv
+* Checkout the code and cd to the code directory
 
-# Set up the virtual environment using the provided requirements.txt file
+* Install virtualenv
+
+* pip3 install virtualenv
+
 * virtualenv env -p python3
 
 ## Run
-source env/bin/activate
-python -m sains
+* source env/bin/activate
+* python -m sains

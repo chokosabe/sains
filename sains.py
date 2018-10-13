@@ -5,13 +5,18 @@ python3 -m sains
 
 
 import cmd
+import os
 import sys
+
+import pprint
+import pytest
 
 from utils.dow import (
     parse_csv
 )
 
 bar = '==' * 32
+data_dir = os.getcwd() + '/tests/data/'
 
 def run_tests():
     sys.call()
@@ -21,8 +26,11 @@ def process_csv(name):
     """
     Process the named CSV
     """
-    pass
-
+    file_path = data_dir + name
+    res = parse_csv(file_path)
+    pprint.pprint(bar)
+    pprint.pprint(res)
+    pprint.pprint(bar)
 
 class SainsInterface(cmd.Cmd):
     """
@@ -38,19 +46,19 @@ class SainsInterface(cmd.Cmd):
              """
 
     def do_0(self, args):
-        run_tests()
+        pytest.main(['--verbose'])
         sys.exit(0)
 
     def do_1(self, args):
-        process_csv('csv1')
+        process_csv('1.csv')
         sys.exit(0)
 
     def do_2(self, args):
-        process_csv('csv2')
+        process_csv('2.csv')
         sys.exit(0)
 
     def do_3(self, args):
-        process_csv('csv3')
+        process_csv('3.csv')
         sys.exit(0)
 
 

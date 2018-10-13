@@ -3,14 +3,23 @@ To run:
 
 checkout the code and cd to the code directory
 
-install virtualenv
+Install virtualenv
+'''bash
 pip3 install virtualenv
+'''
 
 Set up the virtual environment using the provided requirements.txt file
+
+'''bash
 $ virtualenv env -p python3
+'''
 
 Prep the ENV
-$ source env/bin/activate
+'''bash
+source env/bin/activate
+'''
 
-Run all tests
+Start the program
+'''bash
 $ pytest --verbose
+'''
